@@ -1,0 +1,284 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+
+  align-items: center; /* Center items vertically */
+}
+
+
+/* Stack on smaller screens */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column-reverse;
+  }
+}
+.full {
+  width: 100%;
+  height: 90vh; /* Take full screen height */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: flex-start; /* Stick to left side */
+  padding-left: 20%; /* Add some spacing from left edge */
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.section-sub-text{
+  align-items: center;
+justify-content: center;
+  display: flex;
+  font-size: 1.7rem;
+  text-shadow: 5px 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+.contact-form-container {
+  flex: 0 0 400px; /* Fixed nice size */
+  background-color: #161b29;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  margin-left: -50px;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+ 
+}
+
+.form-label span {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  background: rgba(0, 0, 0, 0.2); /* transparent dark layer */
+  backdrop-filter: blur(8px); /* blur stars behind for glass effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border */
+  outline: none;
+  color: #fff;
+  width: 24rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* softer placeholder */
+}
+
+
+.form-textarea {
+  resize: none;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Submit button */
+.form-button {
+  background-color: #2b2b2b;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #333;
+}
+
+.contact-canvas-container {
+  flex: 1;
+  height: auto;
+  min-height: 450px;
+  width: 500px;
+}
+
+@media (min-width: 768px) {
+  .contact-canvas-container {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .contact-section{
+    scale: 0.9;
+    height: 120vh;
+}
+
+.contact-section .section-title {
+    top: -30px;
+    left: 25%;
+}
+}
+
+
+@media screen and (max-width: 700px){
+.contact-section{
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.full{
+  padding-left: 15%;
+}
+}
+
+
+@media screen and (max-width: 1445px){
+
+  .full{
+  padding-left: 5%;
+}
+}
+
+
+@media screen and (max-width: 1217px){
+  .contact-section .section-title {
+    left: 30%;
+}
+.full{
+  padding-left: 2%;
+}
+.contact-canvas-container {
+  height: 550px;
+  scale: 0.8px;
+}
+.full {
+  padding-left: 2%;
+  width: auto;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
+}
+.contact-canvas-container {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;     /* desktop size */
+  aspect-ratio: 1 / 1;  /* keep square */
+  min-height: 300px;
+}
+
+/* Larger tablets */
+@media (min-width: 768px) {
+  .contact-canvas-container {
+    min-height: 450px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 1175px) {
+  .contact-canvas-container {
+    max-width: 380px;
+    min-height: 340px;
+  }
+}
+
+/* Small tablets / large phones */
+@media screen and (max-width: 700px) {
+  .contact-canvas-container {
+    max-width: 300px;
+    min-height: 260px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 510px) {
+  .contact-canvas-container {
+    max-width: 240px;
+    min-height: 210px;
+  }
+
+  .contact-form-container {
+    width: 100%;    /* make form flexible */
+    height: auto;
+  }
+
+  .full {
+    padding-left: 5%;   /* less left padding on mobile */
+    height: auto;
+  }
+  .contact-form-container {
+    flex: 1 1 auto;    /* allow shrinking */
+    width: 100%;       /* take full width */
+    padding: 1.5rem;   /* smaller padding */
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 80%;       /* fluid inputs */
+    max-width: 100%;   /* prevent overflow */
+    font-size: 0.9rem; /* slightly smaller text */
+    padding: 0.9rem 1.2rem;
+  }
+
+  .form-button {
+    width: 100%;       /* full-width button */
+    padding: 0.75rem;
+  }
+
+  .section-sub-text {
+    font-size: 1.2rem; /* scale text down */
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 300px) {
+  .contact-canvas-container {
+    max-width: 180px;
+    min-height: 160px;
+    margin: 0 auto; /* center on tiny screens */
+  }
+
+  .contact-form-container {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .full {
+    padding-left: 2%; /* minimal side padding */
+    padding-right: 2%;
+    height: auto;
+    flex-direction: column; /* stack canvas + form */
+    align-items: center;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 80%;        /* full width */
+    font-size: 0.8rem;  /* smaller text */
+    padding: 0.7rem 1rem;
+  }
+
+  .form-button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .section-sub-text {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

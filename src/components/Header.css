@@ -1,0 +1,165 @@
+/* ===================== HEADER BASE ===================== */
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.121);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px #72a1dea2;
+  z-index: 1000;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left img {
+  width: 40px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 69, 0.326);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px #72a1de63;
+  transition: 0.3s;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header ul a:hover {
+  text-shadow: 0 0 15px black;
+}
+
+.box-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.box-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #72a1de;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  color: lightgray;
+}
+
+.box-icons a:hover {
+  background-color: #72a1de;
+  color: black;
+  box-shadow: 0 0 15px #72a1de;
+}
+
+/* Background video (blackhole effect) */
+.blackhole-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  mix-blend-mode: lighten;
+}
+
+.blackhole-box video {
+  width: 100%;
+  margin-top: -23.5%;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  header ul {
+    gap: 15px;
+    padding: 8px 15px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  header {
+    padding: 0 15px;
+  }
+
+  header ul {
+    gap: 10px;
+    padding: 8px 12px;
+  }
+
+  .box-icons {
+    gap: 15px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .left img {
+    width: 30px;
+  }
+
+  /* Hide nav by default - prepare for hamburger */
+  header ul {
+    display: none;
+  }
+
+  .box-icons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .left img {
+    width: 25px;
+  }
+
+  .left h2 {
+    font-size: 18px;
+  }
+
+  .box-icons a {
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+  }
+}

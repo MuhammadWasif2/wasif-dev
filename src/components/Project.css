@@ -1,0 +1,165 @@
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.my-projects h1 {
+  font-size: 2.5rem;
+}
+
+/* ==== MAIN LAYOUT ==== */
+.project-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10%;
+  justify-content: center;
+}
+
+.project-vidbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-width: 300px; /* smaller safe minimum */
+  max-width: 600px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project-vidbox video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.project-card video:hover {
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 5%;
+}
+
+.project-info h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  max-width: 450px;
+}
+
+.project-info p {
+  max-width: 400px;
+  margin: 0 0 30px;
+}
+
+.project-info button {
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #72a1de81;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #72a1de81;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-info button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 15px #72a1de81;
+}
+
+/* ==== TABLETS (<= 1200px) ==== */
+@media screen and (max-width: 1200px) {
+  .project-card {
+    gap: 40px;
+  }
+
+  .project-info {
+    padding-left: 0;
+  }
+
+  .project-info h1 {
+    font-size: 22px;
+  }
+
+  .project-info p {
+    font-size: 14px;
+  }
+}
+
+/* ==== SMALL TABLETS (<= 700px) ==== */
+@media screen and (max-width: 700px) {
+  .project-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .project-vidbox {
+    width: 90%;
+    min-width: auto;
+    margin: 0 auto;
+  }
+
+  .project-info {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-info h1 {
+    font-size: 20px;
+    max-width: 100%;
+    white-space: normal; /* allow wrapping */
+  }
+
+  .project-info p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .project-info button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ==== MOBILE (<= 480px) ==== */
+@media screen and (max-width: 480px) {
+  .project-card {
+    gap: 15px;
+  }
+
+  .project-vidbox {
+    width: 100%;
+  }
+
+  .project-info h1 {
+    font-size: 18px;
+  }
+
+  .project-info p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .project-info button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

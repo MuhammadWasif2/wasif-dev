@@ -1,0 +1,155 @@
+/* src/styles.css */
+
+/* Paddings */
+.padding-x {
+    padding-left: 1.5rem;   /* px-6 */
+    padding-right: 1.5rem;  /* px-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .padding-x {
+      padding-left: 4rem;   /* sm:px-16 */
+      padding-right: 4rem;  /* sm:px-16 */
+    }
+  }
+  
+  .padding-y {
+    padding-top: 1.5rem;    /* py-6 */
+    padding-bottom: 1.5rem; /* py-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .padding-y {
+      padding-top: 4rem;    /* sm:py-16 */
+      padding-bottom: 4rem; /* sm:py-16 */
+    }
+  }
+  
+  .padding {
+    padding: 2.5rem 1.5rem; /* py-10 px-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .padding {
+      padding: 4rem 4rem;   /* sm:px-16 sm:py-16 */
+    }
+  }
+  
+  /* Typography */
+  .hero-head-text {
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 480px) {
+    .hero-head-text {
+      font-size: 50px; /* xs */
+    }
+  }
+  @media (min-width: 640px) {
+    .hero-head-text {
+      font-size: 60px; /* sm */
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-head-text {
+      font-size: 80px; /* lg */
+      line-height: 98px;
+    }
+  }
+  
+  .hero-sub-text {
+    color: #dfd9ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 480px) {
+    .hero-sub-text {
+      font-size: 20px; /* xs */
+    }
+  }
+  @media (min-width: 640px) {
+    .hero-sub-text {
+      font-size: 26px; /* sm */
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-sub-text {
+      font-size: 30px; /* lg */
+      line-height: 40px;
+    }
+  }
+  
+  .section-head-text {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  @media (min-width: 480px) {
+    .section-head-text {
+      font-size: 40px;
+    }
+  }
+  @media (min-width: 640px) {
+    .section-head-text {
+      font-size: 50px;
+    }
+  }
+  @media (min-width: 768px) {
+    .section-head-text {
+      font-size: 60px;
+    }
+  }
+  
+  .section-sub-text {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--secondary, #aaa); /* fallback */
+    font-size: 14px;
+  }
+  /* Replaces: sm:px-16 px-6 sm:py-16 py-10 */
+.section-wrapper {
+    position: relative;    /* relative */
+    z-index: 0;            /* z-0 */
+    max-width: 1280px;     /* max-w-7xl */
+    margin: 0 auto;        /* mx-auto */
+    padding: 2.5rem 1.5rem; /* py-10 px-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .section-wrapper {
+      padding: 4rem 4rem; /* sm:py-16 sm:px-16 */
+    }
+  }
+  
+  /* Replaces: hash-span utility (in Tailwind projects it's often for anchor offset) */
+  .hash-span {
+    display: block;
+    position: relative;
+    top: -80px; /* adjust based on your header height */
+    visibility: hidden;
+  }
+  
+  
+  @media (min-width: 640px) {
+    .section-sub-text {
+      font-size: 18px;
+    }
+  }
+  .section-wrapper {
+    padding: 2.5rem 1.5rem; /* same as py-10 px-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .section-wrapper {
+      padding: 4rem 4rem; /* sm:px-16 sm:py-16 */
+    }
+  }
+  
+  
