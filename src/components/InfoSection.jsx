@@ -30,7 +30,7 @@ function InfoSection() {
           <p>
             I'm based in Pakistan, Lahore and open to remote work worldwide.
           </p>
-          <video src="/assets/videos/glob.mp4" autoPlay loop muted playsInline></video>
+          <video src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789422/glob_pwutju.mp4" autoPlay loop muted playsInline></video>
           <button>
             <FaPaperPlane /> Contact Me
           </button>

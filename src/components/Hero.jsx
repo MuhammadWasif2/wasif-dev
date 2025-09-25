@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
-        <video autoPlay loop muted playsInline src="/assets/videos/blackhole.mp4"></video>
+        <video autoPlay loop muted playsInline src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789381/blackhole_onmryl.mp4"></video>
       </div>
 
       <div className="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
@@ -35,7 +35,7 @@ function Hero() {
           loop
           muted
           playsInline
-          src="/assets/videos/hero-video.mp4"
+          src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789408/hero-video_o5cv7j.mp4"
         ></video>
       </div>
 

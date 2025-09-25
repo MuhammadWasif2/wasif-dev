@@ -20,7 +20,14 @@ function App() {
 
   return (
     <div className="container">
-      <video className="back-vid" autoPlay loop muted plays Inline src="/assets/videos/galaxy.mp4"></video>
+      <video 
+  className="back-vid" 
+  autoPlay 
+  loop 
+  muted 
+  playsInline 
+  src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789344/galaxy_ahgrlr.mp4">
+</video>
 
       <Header />
       <Hero />

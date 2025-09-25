@@ -34,7 +34,7 @@ function Projects() {
       <div className="project-card autoDisplay" data-aos="fade-up">
         <div className="project-vidbox">
           <video
-            src="/assets/videos/project1.mp4"
+            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789406/project1_c9wris.mp4"
             ref={video1}
             onMouseOver={() => handleMouseOver(video1)}
             onMouseOut={() => handleMouseOut(video1)}
@@ -71,7 +71,7 @@ function Projects() {
       >
         <div className="project-vidbox">
           <video
-            src="/assets/videos/project2.mp4"
+            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789471/project2_a4sf2z.mp4"
             ref={video2}
             onMouseOver={() => handleMouseOver(video2)}
             onMouseOut={() => handleMouseOut(video2)}
@@ -109,7 +109,7 @@ function Projects() {
       >
         <div className="project-vidbox">
           <video
-            src="/assets/videos/project3.mp4"
+            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789451/project3_ioy7hd.mp4"
             ref={video3}
             onMouseOver={() => handleMouseOver(video3)}
             onMouseOut={() => handleMouseOut(video3)}
@@ -145,7 +145,7 @@ function Projects() {
       >
         <div className="project-vidbox">
           <video
-            src="/assets/videos/project4.mp4"
+            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789477/project4_zvt21h.mp4"
             ref={video4}
             onMouseOver={() => handleMouseOver(video4)}
             onMouseOut={() => handleMouseOut(video4)}
