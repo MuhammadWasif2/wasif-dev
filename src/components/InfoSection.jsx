@@ -7,7 +7,7 @@ function InfoSection() {
   return (
     <section id="about" className="info-section">
       <h1 className="section-title autoDisplay">Hello, There 👋</h1>
-      <div className="info-cards fadein-left">
+      <div className="info-cards">
         <div className="card autoDisplay">
           <h1>Hi there, I'm M.Wasif</h1>
           <p>
@@ -17,7 +17,7 @@ function InfoSection() {
           <img src="/assets/images/grid1.png" alt="" />
         </div>
 
-        <div className="card autoDisplayBlur ">
+        <div className="card autoDisplay">
           <h1>Tech Stack</h1>
           <p>
           Equipped with a versatile toolkit of languages, frameworks, and technologies, I craft applications that are not only scalable but also built to last.
