@@ -10,7 +10,7 @@ function Hero() {
         <video autoPlay loop muted playsInline preload="auto" src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789381/blackhole_onmryl.mp4"></video>
       </div>
 
-      <div className="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
+      <div className="hero-info" data-aos="fade-right" data-aos-duration="1000">
         <div className="hero-info-title">
           <i className="bx bxl-sketch"></i> Full-Stack Developer Portfolio
         </div>
