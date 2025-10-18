@@ -30,6 +30,51 @@ function Projects() {
       <div className="hover-sign" ref={hoverSign}></div>
       <h1 className="autoDisplay">My Projects 👨‍💻</h1>
 
+
+ {/* Project 2 (2x speed) */}
+
+
+      <div
+  className="project-card autoDisplay"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <div className="project-vidbox">
+    <video
+      src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789471/project2_a4sf2z.mp4"
+      ref={video2}
+      onMouseOver={() => handleMouseOver(video2)}
+      onMouseOut={() => handleMouseOut(video2)}
+      muted
+      loop
+      playsInline
+    ></video>
+  </div>
+  <div className="project-info">
+    <h1>
+      TravelingWebsite
+      <span className="gradient">:🌍 Safa-Marwah Travel</span>
+    </h1>
+    <p>
+      Safa-Marwah Travel is a professional travel agency website designed
+      to showcase and manage the services of a trusted agency in Pakistan.
+      The platform highlights their expertise in providing visa services
+      from Pakistan to Saudi Arabia, with the agency’s dedicated team
+      handling the entire process for customers. The website presents
+      their offerings clearly, making it easier for clients to understand
+      the services, connect with the team, and begin their travel journey
+      with confidence.
+    </p>
+    <button
+      onClick={() =>
+        window.open("https://safa-marwah-travels.vercel.app/", "_blank")
+      }
+    >
+      <i className="bx bx-link-external"></i> Website
+    </button>
+  </div>
+</div>
+
       {/* Project 1 */}
       <div className="project-card autoDisplay" data-aos="fade-up">
         <div className="project-vidbox">
@@ -58,48 +103,12 @@ function Projects() {
             personal watchlist.
           </p>
           <button>
-            <i className="bx bx-link-external"></i> Website
+            <i className="bx bx-link-external"></i> App
           </button>
         </div>
       </div>
 
-      {/* Project 2 (2x speed) */}
-      <div
-        className="project-card autoDisplay"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div className="project-vidbox">
-          <video
-            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789471/project2_a4sf2z.mp4"
-            ref={video2}
-            onMouseOver={() => handleMouseOver(video2)}
-            onMouseOut={() => handleMouseOut(video2)}
-            muted
-            loop
-            playsInline
-          ></video>
-        </div>
-        <div className="project-info">
-          <h1>
-            TravelingWebsite
-            <span className="gradient">:🌍 Safa-Marwah Travel</span>
-          </h1>
-          <p>
-            Safa-Marwah Travel is a professional travel agency website designed
-            to showcase and manage the services of a trusted agency in Pakistan.
-            The platform highlights their expertise in providing visa services
-            from Pakistan to Saudi Arabia, with the agency’s dedicated team
-            handling the entire process for customers. The website presents
-            their offerings clearly, making it easier for clients to understand
-            the services, connect with the team, and begin their travel journey
-            with confidence.
-          </p>
-          <button>
-            <i className="bx bx-link-external"></i> Website
-          </button>
-        </div>
-      </div>
+   
 
       {/* Project 3 */}
       <div
@@ -138,40 +147,46 @@ function Projects() {
       </div>
 
       {/* Project 4 (fixed ref) */}
-      <div
-        className="project-card autoDisplay"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div className="project-vidbox">
-          <video
-            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789477/project4_zvt21h.mp4"
-            ref={video4}
-            onMouseOver={() => handleMouseOver(video4)}
-            onMouseOut={() => handleMouseOut(video4)}
-            muted
-            loop
-          ></video>
-        </div>
-        <div className="project-info">
-          <h1>
-            ShopifyWebsite
-            <span className="gradient">:💄 Glowzam–Beauty&Skincare</span>
-          </h1>
-          <p>
-            Glowzam is a Shopify-based eCommerce website built for selling
-            beauty and skincare products, including haircare items, masks, and
-            more. The store is designed with a modern, user-friendly layout that
-            enhances the shopping experience while showcasing products in an
-            elegant way. With proper research and design considerations, Glowzam
-            ensures smooth navigation, secure checkout, and a professional look
-            that reflects the brand’s identity in the beauty industry.
-          </p>
-          <button>
-            <i className="bx bx-link-external"></i> Website
-          </button>
-        </div>
-      </div>
+      {/* Project 4 (fixed ref) */}
+<div
+  className="project-card autoDisplay"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <div className="project-vidbox">
+    <video
+      src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789477/project4_zvt21h.mp4"
+      ref={video4}
+      onMouseOver={() => handleMouseOver(video4)}
+      onMouseOut={() => handleMouseOut(video4)}
+      muted
+      loop
+    ></video>
+  </div>
+  <div className="project-info">
+    <h1>
+      ShopifyWebsite
+      <span className="gradient">:💄 Glowzam – Beauty & Skincare</span>
+    </h1>
+    <p>
+      Glowzam is a Shopify-based eCommerce website built for selling
+      beauty and skincare products, including haircare items, masks, and
+      more. The store is designed with a modern, user-friendly layout that
+      enhances the shopping experience while showcasing products in an
+      elegant way. With proper research and design considerations, Glowzam
+      ensures smooth navigation, secure checkout, and a professional look
+      that reflects the brand’s identity in the beauty industry.
+    </p>
+    <button
+      onClick={() =>
+        window.open("https://glowzam.com/", "_blank")
+      }
+    >
+      <i className="bx bx-link-external"></i> Website
+    </button>
+  </div>
+</div>
+
     </section>
   );
 }
