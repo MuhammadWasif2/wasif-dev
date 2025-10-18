@@ -23,9 +23,17 @@ function Hero() {
         ⚡ I also work as a Full-Stack Developer and have hands-on expertise in Shopify development & customization.
          Check out my projects and skills.
         </p>
-        <button>
-          <FaPaperPlane /> Contact Me
-        </button>
+        <button
+  onClick={() => {
+    const contactSection = document.getElementById("contacts");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  <FaPaperPlane /> Contact Me
+</button>
+
       </div>
 
       <div className="skills-video-box">
