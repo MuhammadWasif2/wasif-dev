@@ -34,7 +34,7 @@ function Projects() {
       <div className="project-card autoDisplay" data-aos="fade-up">
         <div className="project-vidbox">
           <video
-            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1758789406/project1_c9wris.mp4"
+            src="https://res.cloudinary.com/dcpprntpd/video/upload/v1760818092/project1_ijzI6iYQ_vwguel.mp4"
             ref={video1}
             onMouseOver={() => handleMouseOver(video1)}
             onMouseOut={() => handleMouseOut(video1)}
